@@ -4,7 +4,7 @@ For the code, "binary_classification_baseline.py" is what we call BCE BERT in th
 
 # Frequently Asked Questions
 
-### Q: What the fuck does the code do?
+### Q: What does the code do?
 
 The basic model we used is bert-base-uncased, which is a ~110M parameter transformer model that was pretrained for natural language tasks, like the one we have at hand. The input data is tokenized and fed through that model.
 
@@ -14,7 +14,7 @@ main.py contains the contrastive learning version which was (mostly) inspired by
 
 As a TLDR: The contrastive loss objective essentially tries to make the encodings of corresponding elements "as close as possible" in some sense. It pulls together corresponding pairs and pushes apart stuff stuff that does not belong to each other. For our problem, the goal is that in the end there will be two clusters in the latent space, one corresponding to positive-sentiment texts and one to negative-sentiment texts.
 
-### Q: How the fuck do I run the code?
+### Q: How do I run the code?
 
 Make sure to unzip twitter-datasets before running anything. Navigate to "code/contrastive approach/" (this is important because relative paths were used!), then just do
 
